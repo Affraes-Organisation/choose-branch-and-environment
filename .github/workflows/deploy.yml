@@ -33,8 +33,8 @@ jobs:
       - name: List branch and destination environment
         run: |
           echo The branch to deploy is is ${{ github.event.inputs.branch }}
-          echo The environment to deploy is is ${{ github.event.inputs.environment }}
-          echo The environment variable is is ${{ secrets.ENVIRONMENTVARIABLE1 }}
+          echo The environment to deploy is ${{ github.event.inputs.environment }}
+          echo The environment variable EnvironmentVariable1 is ${{ secrets.EnvironmentVariable1 }}
 
       # Runs a set of commands using the runners shell
       - name: Deploy
