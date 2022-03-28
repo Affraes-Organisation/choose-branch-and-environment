@@ -9,7 +9,7 @@ on:
     inputs: 
       branch:
         description: 'Branch to deploy'
-        type: branch
+        type: string
         required: true 
         
       environment:
