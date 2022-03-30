@@ -35,7 +35,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: List branch and destination environment
         run: |
-          echo The branch to deploy is is ${{ github.event.inputs.branch }}
+          echo The branch to deploy is ${{ github.event.inputs.branch }}
           echo The environment to deploy is ${{ github.event.inputs.environment }}
           echo The environment variable EnvironmentVariable1 is ${{ env.EnvironmentVariable1 }}
           echo The REVERSED environment variable EnvironmentVariable1 is $( echo ${{ env.EnvironmentVariable1 }} | rev)
